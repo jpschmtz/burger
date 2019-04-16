@@ -2,8 +2,8 @@
 	{{name}}
 
 	<button class="change-eat" data-id="{{id}}" data-newEat="{{eat}}">
-		{{#if eat}}eat TIME!{{else}}WAKE UP!{{/if}}
+		{{#if eat}}{{else}}EAT!{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger" data-id="{{this.id}}">{{#if eat}}DELETE{{/if}}</button>
 </li>
